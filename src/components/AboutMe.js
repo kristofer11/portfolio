@@ -1,17 +1,17 @@
-import React from 'react'
 import Headshot from '../app/images/IMG_5207.jpg';
+import { Row, Col } from 'reactstrap';
 
 const AboutMe = () => {
     return (
-        <div className='sub-section' id='about-me' >
-            <div className='information'>
-                    <h2>About Me</h2>
-                <p>Hello! My name is Kris Hvattum. I am a front-end web developer with a background in education.</p>
-            </div>
-            <div className='headshot-container'>
+        <Row className='sub-section' id='about-me' >
+            <Col className='information col-xs-12'>
+                <h2>About Me</h2>
+                <p>I'm Kris Hvattum. I am a front-end web developer with a background in education. I am always in the process of learning something new. The last couple years I have honed in on programming and found that there is something new to learn <em>every day</em> in this field! I thrive on challenges and the knowledge that something I built delighted a user.</p>
+            </Col>
+            <Col className='headshot-container'>
                 <img src={Headshot} class='headshot' alt='Kris hvattum Headshot' />
-            </div>
-        </div>
+            </Col>
+        </Row>
 
     )
 }

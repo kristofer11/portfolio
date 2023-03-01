@@ -4,8 +4,8 @@ import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg'
 const Projects = () => {
     return (
         <div className='sub-section-alternative' id='projects' >
-            <h2>Projects</h2>
-            <div class='project-container'>
+            <h2 className='project-title'>Projects</h2>
+            <div className='project-container'>
                 <div className='project-card'>
                     <img className='project-image' src={BHPhoto} alt='BH Photography project screenshot' />
                     <h3 className='project-card-title'>Photography Website</h3>
