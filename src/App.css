@@ -54,11 +54,13 @@ h1.title {
 
 .information h2 {
     font-size: 3rem;
+    color: #eac67a;
+    margin-bottom: 1rem;
 }
 
 p {
     margin: 0;
-    font-size: 33px;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -148,7 +150,7 @@ p {
 
 .project-card {
     width: 333px;
-    height: 500px;
+    height: 533px;
     box-shadow: 5px 5px 7px white;
     margin: 10px;
     border-radius: 3%;
@@ -164,8 +166,9 @@ p {
 }
 
 .project-title {
-    color: white;
+    color: #eac67a;
     font-size: 3rem;
+
 }
 
 .project-container {
@@ -175,6 +178,8 @@ p {
 
 .project-image {
     width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     margin-top: 25px;
     border: 2px solid #eac67a;
 }
@@ -199,3 +204,22 @@ p {
     color: #eac67a;
 }
 
+.footer h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.email-link {
+    text-decoration: none;
+    color: #984b43;
+}
+
+.email-link p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.email-link p:hover {
+    transform: scale(1.2);
+    color: #eac67a;
+}
