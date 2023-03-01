@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+
+.section {
+    height: 500px;
+    background-color: white;
+    border: solid black 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+    background-color: #139;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding: 77px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+    color: white !important;
+    font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-toggler {
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+    height: 10rem;
+    color: white;
 }
+
+
+h1.title {
+    color: white;
+    font-size: 90px;
+    margin: 0;
+}
+
+.information h2 {
+    font-size: 3rem;
+}
+
+p {
+    margin: 0;
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.subtitle {
+    color: white;
+    font-size: 27px;
+    margin: 0;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 222px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button {
+    width: 200px;
+    height: 66px;
+    border-radius: 40px;
+    background-color: dodgerblue;
+    font-size: 2.5rem;
+    padding-bottom: 66px;
+}
+
+#button:hover {
+    background-color: #898989;
+}
+
+#button:active {
+    background-color: #808080;
+}
+
+.socials {
+    padding-bottom: 222px;
+}
+
+.social {
+    margin: 33px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 77px;
+    border: 3px solid blue;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 77px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.headshot {
+    width: 222px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px grey;
+    margin: 10px;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image {
+    width: 300px;
+    border-radius: 3%;
+    margin-top: 25px;
+}
+
+.project-card hr {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.project-card-title {
+    margin-top: 2rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: purple;
+}
+
