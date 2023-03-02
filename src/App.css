@@ -127,8 +127,16 @@ p {
     padding-bottom: 222px;
 }
 
+.socials-footer {
+    display: flex;
+    justify-content:end;
+    gap: 2rem;
+    margin-left: 17rem;
+}
+
 .social {
     margin: 33px;
+    display: flex;
 }
 
 .sub-section {
@@ -245,3 +253,4 @@ p {
         font-size: 1.75rem;
     }
 }
+
