@@ -2,6 +2,16 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .section {
     height: 500px;
     background-color: white;
@@ -83,6 +93,7 @@ p {
 .hero-area {
     display: flex;
     height: 100%;
+    max-width: 100vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -151,7 +162,7 @@ p {
 .project-card {
     width: 333px;
     height: 533px;
-    box-shadow: 5px 5px 7px white;
+    box-shadow: 2px 2px 8px white;
     margin: 10px;
     border-radius: 3%;
     margin: 10px;
@@ -164,6 +175,8 @@ p {
         flex-wrap: wrap;
     }
 }
+
+
 
 .project-title {
     color: #eac67a;
@@ -181,7 +194,7 @@ p {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-top: 25px;
-    border: 2px solid #eac67a;
+    box-shadow: 2px 2px 22px;
 }
 
 .project-card hr {
@@ -222,4 +235,13 @@ p {
 .email-link p:hover {
     transform: scale(1.2);
     color: #eac67a;
+}
+
+@media only screen and (max-width: 576px) {
+    h1.title{
+        font-size: 73px;
+    }
+    .email-link p{
+        font-size: 1.75rem;
+    }
 }

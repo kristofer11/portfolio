@@ -18,7 +18,7 @@ const Projects = () => {
                     <h3 className='project-card-title'>Private School Website</h3>
                     <p className='subtext'>A website built using ReactJS for Kardia Classical Scool (in progress)</p>
                     <hr />
-                    <p className='subtext'><a className='project-link' href='https://kristofer11.github.io/bhphotography-react' target='_blank' >View Here</a></p>
+                    <p className='subtext'><a className='project-link' href='https://github.com/kristofer11/kardia' target='_blank' >View Here</a></p>
                 </div>
                 {/* <div className='project-card'>
                     <img className='project-image' src={BHPhoto} alt='BH Photography project screenshot' />
