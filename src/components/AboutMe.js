@@ -1,4 +1,4 @@
-import Headshot from '../app/images/IMG_5207.jpg';
+import Headshot from '../app/images/IMG_5246.jpg';
 import { Row, Col } from 'reactstrap';
 
 const AboutMe = () => {

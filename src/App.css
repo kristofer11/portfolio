@@ -161,7 +161,7 @@ p {
 }
 
 .headshot {
-    width: 222px;
+    width: 333px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
@@ -183,8 +183,6 @@ p {
         flex-wrap: wrap;
     }
 }
-
-
 
 .project-title {
     color: #eac67a;
@@ -248,6 +246,7 @@ p {
 @media only screen and (max-width: 576px) {
     h1.title{
         font-size: 55px;
+        margin-top: 44px;
     }
     .email-link p{
         font-size: 1.75rem;
@@ -271,5 +270,9 @@ p {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+    }
+    .email-link p {
+        font-weight: bold;
+        font-size: 1.5rem;
     }
 } 
