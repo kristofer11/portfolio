@@ -30,11 +30,13 @@ const Hero = () => {
                                 About me
                             </NavLink>
                         </NavItem>
+                        <div className='d-none d-md-block' style={{color: '#eac67a', fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem'}}> |</div>
                         <NavItem>
                             <NavLink className='nav-link' href='#projects'>
                                 Projects
                             </NavLink>
                         </NavItem>
+                        <div className='d-none d-md-block' style={{color: '#eac67a', fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem'}}> |</div>
                         <NavItem>
                             <NavLink className='nav-link' href='#contact'>
                                 Contact
