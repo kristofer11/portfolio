@@ -21,6 +21,8 @@ html,body
 .hero {
     background-color: #233237;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -251,7 +253,7 @@ p {
     }
     .hero-text {
         margin-left: 15px;
-        margin-bottom: 222px;
+        margin-bottom: 115px;
     }
     .social-svg {
         width: 44px;
@@ -262,13 +264,20 @@ p {
     .footer h2{
         font-size: 3rem;
     }    
+    .hero {
+        height: 90vh;
+    }
 }
 
 @media only screen and (max-width: 800px){
+    h1.title{
+        font-size: 55px;
+        margin-top: 44px;
+    }
     .hero-area {
         flex-direction: column;
         align-items: start;
-        justify-content: space-around;
+        justify-content: start;
     }
 
     .socials { 
