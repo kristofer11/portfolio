@@ -17,7 +17,7 @@ import { HashLink } from 'react-router-hash-link'
 const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <div className='hero section'>
+        <div className='hero'>
             <Navbar dark expand='md' className='d-flex justify-content-center px-0 px-md-3 px-lg-5'>
                 <NavbarBrand href='/' className='mr-sm-5 col-2 ml-0'>
                     <img className='logo' src={Logo}></img>

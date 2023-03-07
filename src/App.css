@@ -1,3 +1,8 @@
+:root {
+ 
+    --main-bg-color: brown;
+  }
+
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -26,11 +31,11 @@ html,body
 }
 
 .footer {
-    height: 500px;
+    height: 333px;
     background-color: black;
     color: white;
-    padding: 77px;
     text-align: center;
+    width: 100vw;
 }
 
 .navbar {
@@ -89,7 +94,7 @@ p {
 
 .hero-text {
     margin-left: 55px;
-    margin-bottom: 222px;
+    /* margin-bottom: 222px; */
 }
 
 .hero-area {
@@ -124,27 +129,23 @@ p {
 #button-text:active {
     background-color: #808080;
 }
-
-.socials {
-    padding-bottom: 222px;
-}
-
+/* 
 .socials-footer {
     display: flex;
     justify-content:end;
     gap: 2rem;
     margin-left: 17rem;
-}
+} */
 
 .social {
-    margin: 33px;
+    margin: 55px;
     display: flex;
 }
 
 .sub-section {
     display: flex;
     /* justify-content: space-around; */
-    padding: 77px;
+    padding: 55px;
 }
 
 .sub-section-alternative {
@@ -172,7 +173,7 @@ p {
 .project-card {
     width: 333px;
     height: 533px;
-    box-shadow: 2px 2px 8px white;
+    box-shadow: 2px 2px 4px white;
     margin: 10px;
     border-radius: 3%;
     margin: 10px;
@@ -203,7 +204,7 @@ p {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-top: 25px;
-    box-shadow: 2px 2px 22px;
+    box-shadow: 2px 2px 2px;
 }
 
 .project-card hr {
@@ -228,7 +229,8 @@ p {
 
 .footer h2 {
     font-size: 3rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+    padding-top: 4rem;
 }
 
 .email-link {
@@ -259,14 +261,16 @@ p {
         width: 44px;
     }
     .email-link p{
-        font-size: 1.5rem;
+        font-size: 2rem;
+
     }
     .footer h2{
         font-size: 3rem;
     }    
     .hero {
-        height: 90vh;
+        height: fit-content;
     }
+
 }
 
 @media only screen and (max-width: 800px){
@@ -285,11 +289,12 @@ p {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        margin-top: 88px;
     }
 } 
 
 @media only screen and (max-width: 350px) {
     .email-link p{
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 }
