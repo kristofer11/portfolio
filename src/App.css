@@ -1,10 +1,13 @@
 :root {
- 
-    --main-bg-color: brown;
+    --header-bg: #363538;
+    --main-bg-color: #8d8c8a;
+    --about-bg: #f6f6f6;
+    --accent-color: #52d6f4;
+    --socials-color: #408697;
   }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
     box-sizing: border-box;
 }
 
@@ -24,22 +27,32 @@ html,body
 }
 
 .hero {
-    background-color: #233237;
+    background-color: var(--main-bg-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .footer {
-    height: 333px;
     background-color: black;
     color: white;
     text-align: center;
     width: 100vw;
+    padding-bottom: 4rem;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item svg {
+    margin-right: 1rem;
+    margin-top: 8px;
 }
 
 .navbar {
-    background-color: #18121e;
+    background-color: var(--header-bg);
 }
 
 .nav-link {
@@ -49,6 +62,10 @@ html,body
 
 .nav-link:hover {
     transform: scale(1.15);
+}
+
+.nav-divider {
+    color: var(--socials-color)
 }
 
 .social-svg:hover {
@@ -65,14 +82,16 @@ html,body
 
 h1.title {
     color: white;
-    font-size: 90px;
+    font-size: 10rem;
     margin: 0;
+    font-weight: bold;
 }
 
 .information h2 {
     font-size: 3rem;
-    color: #eac67a;
+    color: var(--socials-color);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 p {
@@ -87,8 +106,8 @@ p {
 }
 
 .subtitle {
-    color: #eac67a;
-    font-size: 27px;
+    color: var(--socials-color);
+    font-size: 3rem;
     margin: 0 0 1rem 0;
 }
 
@@ -116,10 +135,11 @@ p {
     width: 200px;
     height: 66px;
     border-radius: 40px;
-    background-color: #984b43;
+    background-color: var(--accent-color);
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    border: unset;
 }
 
 #button-text:hover {
@@ -127,15 +147,8 @@ p {
 }
 
 #button-text:active {
-    background-color: #808080;
+    background-color: var(--socials-color);
 }
-/* 
-.socials-footer {
-    display: flex;
-    justify-content:end;
-    gap: 2rem;
-    margin-left: 17rem;
-} */
 
 .social {
     margin: 55px;
@@ -146,6 +159,7 @@ p {
     display: flex;
     /* justify-content: space-around; */
     padding: 55px;
+    background-color: var(--about-bg)
 }
 
 .sub-section-alternative {
@@ -153,7 +167,7 @@ p {
     flex-direction: column;
     text-align: center;
     padding: 77px;
-    background-color: #233237;
+    background-color: var(--main-bg-color);
 }
 
 .headshot-container {
@@ -173,7 +187,7 @@ p {
 .project-card {
     width: 333px;
     height: 533px;
-    box-shadow: 2px 2px 4px white;
+    box-shadow: 2px 2px 4px var(--header-bg);
     margin: 10px;
     border-radius: 3%;
     margin: 10px;
@@ -188,8 +202,9 @@ p {
 }
 
 .project-title {
-    color: #eac67a;
+    color: var(--socials-color);
     font-size: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -219,7 +234,7 @@ p {
 .project-link {
     text-decoration: none;
     font-size: 2rem;
-    color: #984b43;
+    color: var(--socials-color);
     font-weight: bold;
 }
 
@@ -229,13 +244,16 @@ p {
 
 .footer h2 {
     font-size: 3rem;
+    color: var(--accent-color);
     /* margin-top: 4rem; */
     padding-top: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .email-link {
     text-decoration: none;
-    color: #984b43;
+    color: var(--socials-color);
 }
 
 .email-link p {
@@ -243,14 +261,35 @@ p {
     font-size: 2rem;
 }
 
-.email-link p:hover {
+.contact-item:hover {
     transform: scale(1.2);
-    color: #eac67a;
+    color: orange;
 }
+
+
+@media only screen and (max-width: 800px){
+    h1.title{
+        font-size: 7rem;
+        margin-top: 44px;
+    }
+    .hero-area {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .socials { 
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 88px;
+    }
+} 
 
 @media only screen and (max-width: 576px) {
     h1.title{
-        font-size: 55px;
+        font-size: 5rem;
         margin-top: 44px;
     }
     .hero-text {
@@ -270,28 +309,15 @@ p {
     .hero {
         height: fit-content;
     }
+    .subtitle {
+        color: var(--socials-color);
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0;
+    }
 
 }
 
-@media only screen and (max-width: 800px){
-    h1.title{
-        font-size: 55px;
-        margin-top: 44px;
-    }
-    .hero-area {
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-    }
 
-    .socials { 
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        margin-top: 88px;
-    }
-} 
 
 @media only screen and (max-width: 350px) {
     .email-link p{
