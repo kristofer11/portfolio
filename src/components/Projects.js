@@ -1,5 +1,5 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
-import KardiaPhoto from '../app/images/kardiascreenshot.png';
+import KardiaPhoto from '../app/images/kardia-3-18.png';
 
 const Projects = () => {
     return (
