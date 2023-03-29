@@ -84,7 +84,7 @@ html,body
 
 h1.title {
     color: white;
-    font-size: 10rem;
+    font-size: 7rem;
     margin: 0;
     font-weight: bold;
 }
@@ -105,6 +105,8 @@ p {
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    margin-inline: 1rem;
+    color: black;
 }
 
 .subtitle {
@@ -160,7 +162,7 @@ p {
 
 .social-svg {
     fill: #eac67a;
-    width: 12vw;
+    width: 10vw;
     max-width: 144px;
 }
 
@@ -199,10 +201,11 @@ p {
 
 .project-card {
     width: 333px;
-    height: 533px;
+    height: 455px;
     box-shadow: 2px 2px 4px var(--header-bg);
     margin: 10px;
     border-radius: 3%;
+    border: 2px solid;
     margin: 10px;
     background-color: var(--about-bg);
 }
@@ -218,7 +221,6 @@ p {
     color: var(--socials-color);
     font-size: 3rem;
     margin-bottom: 2rem;
-
 }
 
 .project-container {
@@ -232,7 +234,7 @@ p {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-top: 25px;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 2px black;
 }
 
 .project-card hr {
@@ -252,7 +254,9 @@ p {
 }
 
 .project-link:hover {
-    color: #eac67a;
+    transform: scale(1.05);
+    color: grey;
+    font-weight: bold;
 }
 
 .footer h2 {
@@ -278,7 +282,6 @@ p {
     transform: scale(1.2);
     color: orange;
 }
-
 
 @media only screen and (max-width: 800px){
     h1.title{
@@ -332,8 +335,6 @@ p {
     }
 
 }
-
-
 
 @media only screen and (max-width: 350px) {
     .email-link p{
