@@ -3,7 +3,8 @@
     --main-bg-color: #8d8c8a;
     --about-bg: #f6f6f6;
     --accent-color: #52d6f4;
-    --socials-color: #408697;
+    --section-header-color: #408697;
+    --socials-color: #eac67a;
     --socials-svg-gradient: linear-gradient(to right, blue, red);
   }
 
@@ -67,7 +68,7 @@ html,body
 }
 
 .nav-divider {
-    color: var(--socials-color)
+    color: var(--section-header-color)
 }
 
 .social-svg:hover {
@@ -91,15 +92,19 @@ h1.title {
 
 .information h2 {
     font-size: 3rem;
-    color: var(--socials-color);
+    color: var(--section-header-color);
     margin-bottom: 1rem;
     text-align: center;
+    text-shadow: 1px 1px var(--header-bg);
 }
 
-p {
+.information h3 {
+    font-size: 2rem;
+}
+
+p, li {
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 300;
 }
 
 .subtext {
@@ -110,7 +115,7 @@ p {
 }
 
 .subtitle {
-    color: var(--socials-color);
+    color: var(--header-bg);
     font-size: 3rem;
     margin: 0 0 1rem 0;
 }
@@ -152,7 +157,7 @@ p {
 }
 
 #button-text:active {
-    background-color: var(--socials-color);
+    background-color: var(--section-header-color);
 }
 
 .social {
@@ -183,6 +188,14 @@ p {
     text-align: center;
     padding: 77px;
     background-color: var(--main-bg-color);
+}
+
+.sub-section-alternative h2 {
+    font-size: 3rem;
+    color: var(--section-header-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px var(--header-bg);
 }
 
 .headshot-container {
@@ -218,7 +231,7 @@ p {
 }
 
 .project-title {
-    color: var(--socials-color);
+    color: var(--section-header-color);
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -249,7 +262,7 @@ p {
 .project-link {
     text-decoration: none;
     font-size: 2rem;
-    color: var(--socials-color);
+    color: var(--section-header-color);
     font-weight: bold;
 }
 
@@ -270,7 +283,7 @@ p {
 
 .email-link {
     text-decoration: none;
-    color: var(--socials-color);
+    color: var(--section-header-color);
 }
 
 .email-link p {
@@ -280,7 +293,7 @@ p {
 
 .contact-item:hover {
     transform: scale(1.2);
-    color: orange;
+    color: var(--socials-color);
 }
 
 @media only screen and (max-width: 800px){
