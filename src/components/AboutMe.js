@@ -14,7 +14,7 @@ const AboutMe = () => {
                     <li>I have a <strong><em>varied professional background</em></strong> that includes teaching, special needs education, school administration, and corrections. I bring these experiences with me wherever I go and they contribute to my desire to <em><strong>create</strong></em>, <strong><em>lead</em></strong>, and <strong><em>teach</em></strong> wherever I go.
                     </li>
                 </ul>
-                <h3>If you have read this far and want to learn more, below are my current projects and some ways you can get ahold of me.</h3>
+                <h3><em>Wow</em>, thanks for reading this far! Below you will find my current projects and a couple different ways you can reach me.</h3>
             </Col>
             <Col className='headshot-container'>
                 <img src={headshot} className='headshot' alt='Kris hvattum Headshot' />
