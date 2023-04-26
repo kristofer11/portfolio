@@ -72,7 +72,11 @@ html,body
 }
 
 .social-svg:hover {
-    transform: scale(1.2);
+    transform: scale(1.04);
+}
+
+.social-svg:active {
+    transform: scale(.99);
 }
 
 .navbar-toggler {
@@ -152,12 +156,13 @@ p, li {
 }
 
 #button-text:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #eac67a;
 }
 
 #button-text:active {
-    background-color: var(--section-header-color);
+    /* background-color: var(--section-header-color); */
+    transform: scale(.99)
 }
 
 .social {
@@ -267,9 +272,13 @@ p, li {
 }
 
 .project-link:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     color: grey;
     font-weight: bold;
+}
+
+.project-link:active {
+    transform: scale(1);
 }
 
 .footer h2 {
@@ -292,8 +301,12 @@ p, li {
 }
 
 .contact-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: var(--socials-color);
+}
+
+.contact-item:active {
+    transform: scale(1);
 }
 
 @media only screen and (max-width: 800px){
