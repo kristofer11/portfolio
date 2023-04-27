@@ -25,7 +25,7 @@ const Projects = () => {
                         <p className='subtext'>Website built using ReactJS for Kardia Classical Scool</p>
                     </div>
                 </a>
-                <a className='project-link' href='https://kardiaclassical.org' target='_blank' >
+                <a className='project-link' href='https://kristofer11.github.io/country-guesser' target='_blank' >
                     <div className='project-card'>
 
                         <img className='project-image' src={CountryGuesser} alt='Screenshot of country guessing game website' />
