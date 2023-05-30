@@ -34,13 +34,6 @@ const Projects = () => {
                         <p className='subtext'>Simple educational game that uses the REST Countries API</p>
                     </div>
                 </a>
-                {/* <div className='project-card'>
-                    <img className='project-image' src={BHPhoto} alt='BH Photography project screenshot' />
-                    <h3 className='project-card-title'>Photography Website</h3>
-                    <p className='subtext'>A portfolio to display the work of photographer Brittany Herzog.</p>
-                    <hr />
-                    <p className='subtext'><a className='project-link' href='https://kristofer11.github.io/bhphotography-react' target='_blank' >View Here</a></p>
-                </div> */}
             </div>
         </div>
     )

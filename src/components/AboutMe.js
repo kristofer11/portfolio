@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap';
 
 const AboutMe = () => {
     return (
-        <Row className='sub-section' id='about-me' >
+        <Row className='sub-section px-lg-5' id='about-me' >
             <Col className='information col-xs-12'>
                 <h2>About Me</h2>
                 <h3>Hi, I'm Kris, a web developer from the Seattle area.</h3>

@@ -18,7 +18,7 @@ const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='hero'>
-            <Navbar dark expand='md' className='d-flex justify-content-center px-0 px-md-3 px-lg-5'>
+            <Navbar dark expand='md' className='d-flex px-md-3 px-lg-5'>
                 <NavbarBrand href='/' className='mr-sm-5 col-2 ml-0'>
                     <img className='logo' src={Logo}></img>
                 </NavbarBrand>
@@ -45,7 +45,7 @@ const Hero = () => {
                     </Nav>
                 </Collapse>
             </Navbar>
-            <div className='hero-area'>
+            <div className='hero-area px-lg-5'>
                 <div className='hero-text'>
                     <h1 className='title'>Kris Hvattum</h1>
                     <p className='subtitle'>Front-End Developer</p>
