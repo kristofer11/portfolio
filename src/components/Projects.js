@@ -1,6 +1,7 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
 import KardiaPhoto from '../app/images/kardia-3-18.png';
-import CountryGuesser from '../app/images/country-guesser.png'
+import CountryGuesser from '../app/images/country-guesser.png';
+import WeatherApp from '../app/images/weather-app.png';
 
 const Projects = () => {
     return (
@@ -32,6 +33,15 @@ const Projects = () => {
 
                         <h3 className='project-card-title'>Country Guessing Game</h3>
                         <p className='subtext'>Simple educational game that uses the REST Countries API</p>
+                    </div>
+                </a>
+                <a className='project-link' href='https://kristofer11.github.io/weather-app' target='_blank' >
+                    <div className='project-card'>
+
+                        <img className='project-image' src={WeatherApp} alt='Screenshot of country guessing game website' />
+
+                        <h3 className='project-card-title'>Weather forecast app.</h3>
+                        <p className='subtext'>Started as a code-along, now I am progressively adding features like changing background.</p>
                     </div>
                 </a>
             </div>

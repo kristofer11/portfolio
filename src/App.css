@@ -247,6 +247,7 @@ p, li {
 .project-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project-image {
