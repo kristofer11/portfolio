@@ -1,7 +1,6 @@
 :root {
     --header-bg: #363538;
     --main-bg-color: #8d8c8a;
-    --main-bg-gradient: linear-gradient(#8d8c8a 78% , #f6f6f6);
     --about-bg: #f6f6f6;
     --accent-color: #52d6f4;
     --section-header-color: #408697;
@@ -32,7 +31,7 @@ html,body
 
 .hero {
     /* background-color: var(--main-bg-color); */
-    background: var(--main-bg-gradient);
+    background: linear-gradient(var(--main-bg-color) 82%, var(--about-bg));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -136,11 +135,9 @@ p, li {
 .hero-area {
     display: flex;
     height: 100%;
-    /* max-width: 700px; */
     justify-content: space-between;
     align-items: center;
     margin-top: 66px;
-    /* align-self: center; */
 }
 
 #button {
@@ -196,8 +193,7 @@ p, li {
     flex-direction: column;
     text-align: center;
     padding: 77px;
-    /* background-color: var(--main-bg-color); */
-    background: linear-gradient(#f6f6f6 18%, #8d8c8a 82%);
+    background: linear-gradient(var(--about-bg) 18%, var(--main-bg-color) 82%);
 }
 
 .sub-section-alternative h2 {
