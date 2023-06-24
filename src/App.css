@@ -1,6 +1,7 @@
 :root {
     --header-bg: #363538;
     --main-bg-color: #8d8c8a;
+    --main-bg-gradient: linear-gradient(#8d8c8a, #f6f6f6);
     --about-bg: #f6f6f6;
     --accent-color: #52d6f4;
     --section-header-color: #408697;
@@ -30,7 +31,8 @@ html,body
 }
 
 .hero {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background: var(--main-bg-gradient);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -195,7 +197,8 @@ p, li {
     flex-direction: column;
     text-align: center;
     padding: 77px;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background: linear-gradient(#f6f6f6, #8d8c8a);
 }
 
 .sub-section-alternative h2 {
