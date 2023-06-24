@@ -1,7 +1,7 @@
 :root {
     --header-bg: #363538;
     --main-bg-color: #8d8c8a;
-    --main-bg-gradient: linear-gradient(#8d8c8a, #f6f6f6);
+    --main-bg-gradient: linear-gradient(#8d8c8a 78% , #f6f6f6);
     --about-bg: #f6f6f6;
     --accent-color: #52d6f4;
     --section-header-color: #408697;
@@ -187,7 +187,6 @@ p, li {
 
 .sub-section {
     display: flex;
-    /* justify-content: space-around; */
     padding: 55px;
     background-color: var(--about-bg)
 }
@@ -198,7 +197,7 @@ p, li {
     text-align: center;
     padding: 77px;
     /* background-color: var(--main-bg-color); */
-    background: linear-gradient(#f6f6f6, #8d8c8a);
+    background: linear-gradient(#f6f6f6 18%, #8d8c8a 82%);
 }
 
 .sub-section-alternative h2 {
