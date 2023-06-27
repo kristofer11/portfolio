@@ -26,6 +26,7 @@ html,body
     scroll-behavior: smooth;    
 }
 
+
 .navbar, .hero-area, .sub-section, .sub-section-alternative {
     padding-inline: calc(22px + 12vw);
 }
@@ -34,6 +35,15 @@ html,body
     height: 500px;
     background-color: white;
     border: solid black 1px;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--section-header-color) !important;
+}
+
+.about-link:hover {
+    color: var(--accent-color) !important;
 }
 
 .hero {
