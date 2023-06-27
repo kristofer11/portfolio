@@ -348,11 +348,15 @@ p, li {
         justify-content: start;
     }
 
+    .social {
+        margin: 32px;
+        display: flex;
+    }
+        
     .socials { 
         display: flex;
-        flex-direction: row;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         margin-top: 88px;
     }
     .social-svg {
@@ -361,7 +365,7 @@ p, li {
 } 
 
 @media only screen and (max-width: 576px) {
-    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+    .navbar, .hero-area, .sub-section, .sub-section-alternative, {
         padding-inline: 1rem;
     }
 
@@ -372,6 +376,11 @@ p, li {
     .hero-text {
         margin-left: 15px;
         /* margin-bottom: 115px; */
+    }
+    .socials { 
+        display: flex;
+        justify-content: center;
+        width: fit-content;
     }
     .social {
         margin-bottom: 33px;
