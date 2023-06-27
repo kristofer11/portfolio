@@ -11,16 +11,23 @@
 * {
     font-family: 'Saira Semi Condensed', sans-serif;
     box-sizing: border-box;
+    max-width: 100%
 }
+
 
 html,body
 {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     scroll-behavior: smooth;    
+}
+
+.navbar, .hero-area, .sub-section, .sub-section-alternative {
+    padding-inline: calc(22px + 12vw);
 }
 
 .section {
@@ -30,14 +37,41 @@ html,body
 }
 
 .hero {
-    /* background-color: var(--main-bg-color); */
     background: linear-gradient(var(--main-bg-color) 82%, var(--about-bg));
-    height: 100vh;
+/* removing height: 100vh fixed overlapping issues with next element */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
 
+.hero-text {
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.headshot {
+    width: 22vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 .footer {
     background-color: black;
@@ -59,6 +93,10 @@ html,body
 
 .navbar {
     background-color: var(--header-bg);
+}
+
+.navbar-brand {
+    width: fit-content !important;
 }
 
 .nav-link {
@@ -92,7 +130,7 @@ html,body
 
 h1.title {
     color: white;
-    font-size: 7rem;
+    font-size: 5rem;
     margin: 0;
     font-weight: bold;
 }
@@ -127,19 +165,6 @@ p, li {
     margin: 0 0 1rem 0;
 }
 
-.hero-text {
-    margin-left: 55px;
-    /* margin-bottom: 222px; */
-}
-
-.hero-area {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 66px;
-}
-
 #button {
     color: white;
     text-decoration: none;
@@ -163,7 +188,6 @@ p, li {
 }
 
 #button-text:active {
-    /* background-color: var(--section-header-color); */
     transform: scale(.99)
 }
 
@@ -174,7 +198,7 @@ p, li {
 
 .social-svg {
     fill: #eac67a;
-    width: 10vw;
+    width: 5rem;
     max-width: 144px;
 }
 
@@ -185,7 +209,7 @@ p, li {
 .sub-section {
     display: flex;
     padding: 55px;
-    background-color: var(--about-bg)
+    background-color: var(--about-bg);
 }
 
 .sub-section-alternative {
@@ -204,20 +228,6 @@ p, li {
     text-shadow: 1px 1px var(--header-bg);
 }
 
-.headshot-container {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    padding-top: 5rem;
-}
-
-.headshot {
-    width: 333px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .project-card {
     width: 333px;
     height: 455px;
@@ -230,9 +240,17 @@ p, li {
 }
 
 @media only screen and (max-width: 1000px) {
+    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+        padding-inline: 4rem;
+    }
+
     .project-container {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .headshot {
+        width: 282px;
     }
 }
 
@@ -312,8 +330,16 @@ p, li {
 }
 
 @media only screen and (max-width: 800px){
+    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+        padding-inline: 2rem;
+    }
+
+    .headshot {
+        width: 272px;
+    }
+
     h1.title{
-        font-size: 7rem;
+        font-size: 4.5rem;
         margin-top: 44px;
     }
     .hero-area {
@@ -329,22 +355,29 @@ p, li {
         justify-content: center;
         margin-top: 88px;
     }
+    .social-svg {
+        width: 72px;
+    }
 } 
 
 @media only screen and (max-width: 576px) {
+    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+        padding-inline: 1rem;
+    }
+
     h1.title{
-        font-size: 5rem;
+        font-size: 4rem;
         margin-top: 44px;
     }
     .hero-text {
         margin-left: 15px;
-        margin-bottom: 115px;
+        /* margin-bottom: 115px; */
     }
     .social {
         margin-bottom: 33px;
     }
     .social-svg {
-        width: 55px;
+        width: 72px;
     }
     .email-link p{
         font-size: 2rem;

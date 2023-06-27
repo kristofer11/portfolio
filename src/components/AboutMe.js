@@ -1,10 +1,9 @@
 import headshot from '../app/images/IMG_5246.jpg';
-import { Row, Col } from 'reactstrap';
 
 const AboutMe = () => {
     return (
-        <Row className='sub-section px-lg-5' id='about-me' >
-            <Col className='information col-xs-12'>
+        <div className='sub-section' id='about-me' >
+            <div className='information col-xs-12'>
                 <h2>About Me</h2>
                 <h3>Hi, I'm Kris, a web developer from the Seattle area.</h3>
                 <p>I should be <strong>up front</strong> about a few things:</p>
@@ -16,11 +15,11 @@ const AboutMe = () => {
                     </li>
                 </ul>
                 <h3><em>Wow</em>, thanks for reading this far! Below you will find my current projects and a couple different ways you can reach me.</h3>
-            </Col>
-            <Col className='headshot-container'>
+            </div>
+            {/* <Col className='headshot-container'>
                 <img src={headshot} className='headshot' alt='Kris hvattum Headshot' />
-            </Col>
-        </Row>
+            </Col> */}
+        </div>
 
     )
 }

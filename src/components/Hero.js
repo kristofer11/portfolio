@@ -12,14 +12,15 @@ import {
     Col
 } from 'reactstrap';
 import Logo from '../app/images/logo-white-nobg.png';
-import { HashLink } from 'react-router-hash-link'
+import { HashLink } from 'react-router-hash-link';
+import headshot from '../app/images/IMG_5246.jpg';
 
 const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='hero'>
-            <Navbar dark expand='md' className='d-flex px-md-3 px-lg-5'>
-                <NavbarBrand href='/' className='mr-sm-5 col-2 ml-0'>
+            <Navbar dark expand='md' className='d-flex'>
+                <NavbarBrand href='/' className='col-2 ml-0'>
                     <img className='logo' src={Logo}></img>
                 </NavbarBrand>
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
@@ -36,7 +37,7 @@ const Hero = () => {
                                 Projects
                             </NavLink>
                         </NavItem>
-                        <div className='d-none d-md-block nav-divider' style={{fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem'}}> |</div>
+                        <div className='d-none d-md-block nav-divider' style={{ fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem' }}> |</div>
                         <NavItem>
                             <NavLink className='nav-link' href='#contact'>
                                 Contact
@@ -45,10 +46,14 @@ const Hero = () => {
                     </Nav>
                 </Collapse>
             </Navbar>
-            <div className='hero-area px-lg-5'>
+            <div className='hero-area'>
+
                 <div className='hero-text'>
+                    <Col className='headshot-container'>
+                        <img src={headshot} className='headshot' alt='Kris hvattum Headshot' />
+                    </Col>
                     <h1 className='title'>Kris Hvattum</h1>
-                    <p className='subtitle'>Front-End Developer</p>
+                    <p className='subtitle'>Web Developer</p>
                     <HashLink id='button' to='#about-me'>
                         <Button id='button-text'>About me</Button>
                     </HashLink>
