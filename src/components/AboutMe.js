@@ -1,4 +1,6 @@
 import headshot from '../app/images/IMG_5246.jpg';
+import { HashLink } from 'react-router-hash-link';
+import { Button } from 'reactstrap';
 
 const AboutMe = () => {
     return (
@@ -12,10 +14,14 @@ const AboutMe = () => {
                         I have a <strong><em>creative</em> </strong>brain, there's no way around it. <em>Sometimes</em> I style UIs the way I cook - try it out and throw it away if it's gross!
                     </li>
                     <li>
-                        I have proven skills in <em><strong>front-end web development</strong></em> and I am progressively adding the skills it takes to be a full-stack engineer. Currently I am having a blast using ReactJS, NextJS, Sass, MongoDB and ExpressJS to complete some projects including a <strong><a  className='about-link' href='https://github.com/kristofer11/library-manager' target="_blank">personal library management app</a></strong>.
+                        I have proven skills in <em><strong>front-end web development</strong></em> and I am progressively adding the skills it takes to be a full-stack engineer. Currently I am having a blast using ReactJS, NextJS, Sass, MongoDB and ExpressJS to complete some projects including a <strong><a className='about-link' href='https://github.com/kristofer11/library-manager' target="_blank">personal library management app</a></strong>.
                     </li>
                     <li>
-                        I am also building a REST api for my Country Guesser app using <em>Express, MongoDB, and Mongoose. </em>Check out my <strong><a className='about-link' href='#projects' target="_blank">projects</a></strong> below to see  my work!
+                        I am also building a REST api for my Country Guesser app using <em>Express, MongoDB, and Mongoose. </em>Check out my <strong>
+                            <HashLink to='#projects'>
+                                <a className='about-link' >projects</a>
+                            </HashLink>
+                        </strong> below to see  my work!
                     </li>
                     <li>
                         I have a <strong><em>varied professional background</em></strong> that includes teaching, special needs education, school administration, and corrections. I bring these experiences with me wherever I go and they contribute to my desire to <em><strong>create</strong></em>, <strong><em>lead</em></strong>, and <strong><em>teach</em></strong> wherever I go.
