@@ -230,7 +230,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-block: 77px;
+    padding-bottom: 77px;
     /* background-color: var(--about-bg); */
     background: linear-gradient(var(--about-bg) 18%, var(--main-bg-color) 82%, black);
 }
