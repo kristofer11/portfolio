@@ -354,7 +354,7 @@ li {
 .technologies-section {
     /* background-color: var(--main-bg-color); */
     background: linear-gradient(var(--main-bg-color) 75%, var(--about-bg));
-    padding-bottom: 4rem;
+    padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,12 +365,12 @@ li {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem;
     gap: 1rem;
 
     height: fit-content;
-    min-height: 300px;
-    max-width: 750px;
+    min-height: 333px;
+    max-width: 1333px;
 
     box-shadow: 2px 2px 4px var(--header-bg);
     border-radius: 8px;
@@ -379,7 +379,7 @@ li {
 }
 
 .technologies-container svg {
-    width: 5rem;
+    width: 7rem;
 
     transition: transform 0.3s ease-in-out;
 }
@@ -396,6 +396,10 @@ li {
     .sub-section-alternative,
     .technologies-section {
         padding-inline: 2rem;
+    }
+
+    .technologies-container svg {
+        width: 5rem;    
     }
 
     .headshot {
