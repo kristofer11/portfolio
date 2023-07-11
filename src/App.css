@@ -230,7 +230,7 @@ p, li {
     background: linear-gradient(var(--about-bg) 18%, var(--main-bg-color) 82%);
 }
 
-.sub-section-alternative h2 {
+.sub-section-alternative h2, .technologies-section h2 {
     font-size: 3rem;
     color: var(--section-header-color);
     margin-bottom: 1rem;
@@ -264,7 +264,7 @@ p, li {
     }
 }
 
-.project-title {
+.project-title, .technologies-title {
     color: var(--section-header-color);
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -337,6 +337,22 @@ p, li {
 
 .contact-item:active {
     transform: scale(1);
+}
+
+.technologies-section {
+    background-color: var(--main-bg-color);
+}
+
+.technologies-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.technologies-container svg {
+    width: 5rem;
 }
 
 @media only screen and (max-width: 800px){

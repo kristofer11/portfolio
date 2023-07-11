@@ -4,7 +4,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { HashRouter } from 'react-router-dom';
-
+import Technologies from './components/Technologies';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
             <Hero />
             <AboutMe />
             <Projects />
+            <Technologies />
             <Footer />            
         </HashRouter>
     </div>
