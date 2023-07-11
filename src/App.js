@@ -11,9 +11,9 @@ function App() {
     <div className="App">
         <HashRouter>
             <Hero />
+            <Technologies />
             <AboutMe />
             <Projects />
-            <Technologies />
             <Footer />            
         </HashRouter>
     </div>

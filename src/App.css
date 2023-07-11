@@ -6,7 +6,7 @@
     --section-header-color: #408697;
     --socials-color: #eac67a;
     --socials-svg-gradient: linear-gradient(to right, blue, red);
-  }
+}
 
 * {
     font-family: 'Saira Semi Condensed', sans-serif;
@@ -15,19 +15,22 @@
 }
 
 
-html,body
-{
+html,
+body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
 }
 
 
-.navbar, .hero-area, .sub-section, .sub-section-alternative {
+.navbar,
+.hero-area,
+.sub-section,
+.sub-section-alternative {
     padding-inline: calc(22px + 12vw);
 }
 
@@ -47,8 +50,8 @@ a {
 }
 
 .hero {
-    background: linear-gradient(var(--main-bg-color) 82%, var(--about-bg));
-/* removing height: 100vh fixed overlapping issues with next element */
+    background-color: var(--main-bg-color);
+    /* background: linear-gradient(var(--main-bg-color) 82%, var(--about-bg)); */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -157,7 +160,8 @@ h1.title {
     font-size: 2rem;
 }
 
-p, li {
+p,
+li {
     margin: 0;
     font-size: 1.5rem;
 }
@@ -227,10 +231,12 @@ p, li {
     flex-direction: column;
     text-align: center;
     padding-block: 77px;
-    background: linear-gradient(var(--about-bg) 18%, var(--main-bg-color) 82%);
+    /* background-color: var(--about-bg); */
+    background: linear-gradient(var(--about-bg) 18%, var(--main-bg-color) 82%, black);
 }
 
-.sub-section-alternative h2, .technologies-section h2 {
+.sub-section-alternative h2,
+.technologies-section h2 {
     font-size: 3rem;
     color: var(--section-header-color);
     margin-bottom: 1rem;
@@ -250,7 +256,12 @@ p, li {
 }
 
 @media only screen and (max-width: 1000px) {
-    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+
+    .navbar,
+    .hero-area,
+    .sub-section,
+    .sub-section-alternative,
+    .technologies-section {
         padding-inline: 4rem;
     }
 
@@ -264,7 +275,8 @@ p, li {
     }
 }
 
-.project-title, .technologies-title {
+.project-title,
+.technologies-title {
     color: var(--section-header-color);
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -340,23 +352,49 @@ p, li {
 }
 
 .technologies-section {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background: linear-gradient(var(--main-bg-color) 75%, var(--about-bg));
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .technologies-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     gap: 1rem;
+
+    height: fit-content;
+    min-height: 300px;
+    max-width: 750px;
+
+    box-shadow: 2px 2px 4px var(--header-bg);
+    border-radius: 8px;
+    border: 2px solid var(--section-header-color);
+    background-color: var(--about-bg);
 }
 
 .technologies-container svg {
     width: 5rem;
+
+    transition: transform 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 800px){
-    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+.technologies-container svg:hover {
+    transform: rotate(-3deg) scale(1.08);
+}
+
+@media only screen and (max-width: 800px) {
+
+    .navbar,
+    .hero-area,
+    .sub-section,
+    .sub-section-alternative,
+    .technologies-section {
         padding-inline: 2rem;
     }
 
@@ -364,10 +402,11 @@ p, li {
         width: 272px;
     }
 
-    h1.title{
+    h1.title {
         font-size: 4.5rem;
         margin-top: 44px;
     }
+
     .hero-area {
         flex-direction: column;
         align-items: start;
@@ -382,23 +421,30 @@ p, li {
         margin: 32px;
         display: flex;
     }
-    .socials { 
+
+    .socials {
         display: flex;
         width: 100%;
         justify-content: space-around;
         margin-top: 88px;
     }
+
     .social-svg {
         width: 72px;
     }
-} 
+}
 
 @media only screen and (max-width: 576px) {
-    .navbar, .hero-area, .sub-section, .sub-section-alternative {
+
+    .navbar,
+    .hero-area,
+    .sub-section,
+    .sub-section-alternative,
+    .technologies-section {
         padding-inline: 1rem;
     }
 
-    h1.title{
+    h1.title {
         font-size: 4rem;
         margin-top: 44px;
     }
@@ -412,7 +458,7 @@ p, li {
         padding-top: 1rem;
     }
 
-    .socials { 
+    .socials {
         display: flex;
         justify-content: center;
         width: fit-content;
@@ -422,26 +468,31 @@ p, li {
     .social-svg {
         width: 72px;
     }
-    .email-link p{
+
+    .email-link p {
         font-size: 2rem;
 
     }
-    .footer h2{
+
+    .footer h2 {
         font-size: 3rem;
-    }    
+    }
+
     .hero {
         height: fit-content;
     }
+
     .subtitle {
         /* color: var(--socials-color); */
         font-size: 2.5rem;
         margin: 0 0 1rem 0;
     }
 
+
 }
 
 @media only screen and (max-width: 350px) {
-    .email-link p{
+    .email-link p {
         font-size: 1.75rem;
     }
 }
