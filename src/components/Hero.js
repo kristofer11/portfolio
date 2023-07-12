@@ -14,12 +14,14 @@ import {
 import Logo from '../app/images/logo-white-nobg.png';
 import { HashLink } from 'react-router-hash-link';
 import headshot from '../app/images/IMG_5246.jpg';
+// import Header from '../components/Header'
 
 const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='hero'>
-            <Navbar dark expand='md' className='d-flex'>
+            {/* <Header /> */}
+            {/* <Navbar dark expand='md' className='d-flex'>
                 <NavbarBrand href='/' className='col-2 ml-0'>
                     <img className='logo' src={Logo}></img>
                 </NavbarBrand>
@@ -43,9 +45,15 @@ const Hero = () => {
                                 Contact
                             </NavLink>
                         </NavItem>
+                        <div className='d-none d-md-block nav-divider' style={{ fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem' }}> |</div>
+                        <NavItem>
+                            <NavLink className='nav-link' href='#projects'>
+                                Resume
+                            </NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
-            </Navbar>
+            </Navbar> */}
             <div className='hero-area'>
 
                 <div className='hero-text'>
@@ -54,9 +62,15 @@ const Hero = () => {
                     </Col>
                     <h1 className='title'>Kris Hvattum</h1>
                     <p className='subtitle'>Web Developer</p>
-                    <HashLink id='button' to='#about-me'>
-                        <Button id='button-text'>About me</Button>
-                    </HashLink>
+                    <div className='hero-link-container'>
+                        <HashLink id='button' to='#about-me'>
+                            <Button id='button-text'>About me</Button>
+                        </HashLink>
+                        <HashLink id='button' to='/resume' target='_blank'>
+                            <Button id='button-text'>Resume</Button>
+                        </HashLink>                        
+                    </div>
+
                 </div>
                 <div className='socials'>
                     <div className='social'>

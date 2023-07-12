@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 
 const AboutMe = () => {
     return (
-        <div className='sub-section' id='about-me' >
+        <div className='sub-section'  id='about-me'  >
             <div className='information col-xs-12'>
                 <h2>About Me</h2>
                 <h3>Hi, I'm Kris, a web developer from the Seattle area.</h3>
