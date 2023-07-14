@@ -1,6 +1,7 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
 import KardiaPhoto from '../app/images/kardia-3-18.png';
 import CountryGuesser from '../app/images/country-guesser.png';
+import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
 import WeatherApp from '../app/images/weather-app.png';
 
 const Projects = () => {
@@ -24,6 +25,15 @@ const Projects = () => {
 
                         <h3 className='project-card-title'>Private School Website</h3>
                         <p className='subtext'>Website built using ReactJS for Kardia Classical Scool</p>
+                    </div>
+                </a>
+                <a className='project-link' href='https://library-manager-gamma.vercel.app/' target='_blank' >
+                    <div className='project-card'>
+
+                        <img className='project-image' src={MyLibrary} alt='Kardia Classical School project screenshot' />
+
+                        <h3 className='project-card-title'>Personal Library Manager</h3>
+                        <p className='subtext'>*IN PROGRESS* user can to track, rate and (eventually) share what they are reading</p>
                     </div>
                 </a>
                 <a className='project-link' href='https://kristofer11.github.io/country-guesser' target='_blank' >
