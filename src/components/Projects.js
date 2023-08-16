@@ -38,13 +38,15 @@ const Projects = () => {
                         <p className='subtext'>Simple educational game that uses the REST Countries API</p>
                     </div>
                 </a>
-                <a className='project-link' href='https://kristofer11.github.io/weather-app' target='_blank' >
+               
+{/* REMOVE UNTIL I CAN MAKE MORE PROGRESS */}
+                {/* <a className='project-link' href='https://kristofer11.github.io/weather-app' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Weather forecast app.</h3>
                         <img className='project-image' src={WeatherApp} alt='Screenshot of country guessing game website' />
                         <p className='subtext'>Started as a code-along, now I am progressively adding features like changing background.</p>
                     </div>
-                </a>
+                </a> */}
             </div>
         </div>
     )
