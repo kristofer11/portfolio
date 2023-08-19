@@ -90,7 +90,9 @@ a {
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
+    filter: drop-shadow(0 0 0.75rem var(--socials-color));
 }
+
 
 .footer {
     background-color: black;
