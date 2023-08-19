@@ -17,6 +17,7 @@ function App() {
                 <Route path='/resume' element={<Resume />} />                   
             </Routes>            
         <Footer /> 
+        <p style={{background: 'black', margin: 0, color: '#408697', paddingLeft: '1.5rem'}}>Kris Hvattum ©2023</p>
     </div>
   );
 }
