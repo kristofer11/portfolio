@@ -3,6 +3,7 @@ import KardiaPhoto from '../app/images/kardia-3-18.png';
 import CountryGuesser from '../app/images/country-guesser.png';
 import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
 import WeatherApp from '../app/images/weather-app.png';
+import Kelsos from '../app/images/Screenshot 2023-08-18 at 7.56.52 PM.png';
 
 const Projects = () => {
     return (
@@ -10,6 +11,21 @@ const Projects = () => {
             <h2 className='project-title'>Projects</h2>
 
             <div className='project-container'>
+            <a className='project-link' href='https://kardiaclassical.org' target='_blank' >
+                    <div className='project-card'>
+                        <h3 className='project-card-title'>Private School Website</h3>
+                        <img className='project-image' src={KardiaPhoto} alt='Kardia Classical School project screenshot' />
+                        <p className='subtext'>Website built using ReactJS for Kardia Classical Scool</p>
+                    </div>
+                </a>
+
+                <a className='project-link' href='https://kelsosmeats.com' target='_blank' >
+                    <div className='project-card'>
+                        <h3 className='project-card-title'>Butcher Shop Landing Page</h3>
+                        <img className='project-image' src={Kelsos} alt='Screenshot of butcher shop landing page' />
+                        <p className='subtext'>Landing page/marketing site for butcher shop in Snohomish, WA</p>
+                    </div>
+                </a>
                 <a className='project-link' href='https://brittanyherzog.com' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Photography Website</h3>
@@ -17,13 +33,7 @@ const Projects = () => {
                         <p className='subtext'>Photography portfolio website built using ReactJS.</p>
                     </div>
                 </a>
-                <a className='project-link' href='https://kardiaclassical.org' target='_blank' >
-                    <div className='project-card'>
-                        <h3 className='project-card-title'>Private School Website</h3>
-                        <img className='project-image' src={KardiaPhoto} alt='Kardia Classical School project screenshot' />
-                        <p className='subtext'>Website built using ReactJS for Kardia Classical Scool</p>
-                    </div>
-                </a>
+
                 <a className='project-link' href='https://library-manager-gamma.vercel.app/' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Personal Library Manager</h3>
@@ -31,6 +41,7 @@ const Projects = () => {
                         <p className='subtext'>*IN PROGRESS* user can to track, rate and (eventually) share what they are reading</p>
                     </div>
                 </a>
+
                 <a className='project-link' href='https://kristofer11.github.io/country-guesser' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Country Guessing Game</h3>
@@ -38,8 +49,8 @@ const Projects = () => {
                         <p className='subtext'>Simple educational game that uses the REST Countries API</p>
                     </div>
                 </a>
-               
-{/* REMOVE UNTIL I CAN MAKE MORE PROGRESS */}
+
+                {/* REMOVE UNTIL I CAN MAKE MORE PROGRESS */}
                 {/* <a className='project-link' href='https://kristofer11.github.io/weather-app' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Weather forecast app.</h3>
