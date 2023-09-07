@@ -1,9 +1,10 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
-import KardiaPhoto from '../app/images/kardia-3-18.png';
+import KardiaPhoto from '../app/images/kardiaScreenshot9.6.23.png';
 import CountryGuesser from '../app/images/country-guesser.png';
 import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
 import WeatherApp from '../app/images/weather-app.png';
 import Kelsos from '../app/images/Screenshot 2023-08-18 at 7.56.52 PM.png';
+import Chuck from '../app/images/chuckSiteScreenshot.png'
 
 const Projects = () => {
     return (
@@ -24,6 +25,13 @@ const Projects = () => {
                         <h3 className='project-card-title'>Butcher Shop Landing Page</h3>
                         <img className='project-image' src={Kelsos} alt='Screenshot of butcher shop landing page' />
                         <p className='subtext'>Landing page/marketing site for butcher shop in Snohomish, WA</p>
+                    </div>
+                </a>
+                <a className='project-link' href='https://whitfieldforeducation.com' target='_blank' >
+                    <div className='project-card'>
+                        <h3 className='project-card-title'>Political Campaign Site</h3>
+                        <img className='project-image' src={Chuck} alt='Chuck Whitfield for School board site screenshot' />
+                        <p className='subtext'>Campaign website built for school board candidate</p>
                     </div>
                 </a>
                 <a className='project-link' href='https://brittanyherzog.com' target='_blank' >
