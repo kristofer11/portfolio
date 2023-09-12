@@ -1,6 +1,7 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
 import KardiaPhoto from '../app/images/kardiaScreenshot9.6.23.png';
 import CountryGuesser from '../app/images/country-guesser.png';
+import CountyGuesser from '../app/images/CountiesScreenshot.png'
 import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
 import WeatherApp from '../app/images/weather-app.png';
 import Kelsos from '../app/images/Screenshot 2023-08-18 at 7.56.52 PM.png';
@@ -55,6 +56,13 @@ const Projects = () => {
                         <h3 className='project-card-title'>Country Guessing Game</h3>
                         <img className='project-image' src={CountryGuesser} alt='Screenshot of country guessing game website' />
                         <p className='subtext'>Simple educational game that uses the REST Countries API</p>
+                    </div>
+                </a>
+                <a className='project-link' href='https://kristofer11.github.io/county-guesser/' target='_blank' >
+                    <div className='project-card'>
+                        <h3 className='project-card-title'>WA State Counties Game</h3>
+                        <img className='project-image' src={CountyGuesser} alt='Screenshot of county guessing game website' />
+                        <p className='subtext'>Geography game built to help my students with counties</p>
                     </div>
                 </a>
 
