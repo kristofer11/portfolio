@@ -1,6 +1,6 @@
 import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
 import KardiaPhoto from '../app/images/kardiaScreenshot9.6.23.png';
-import CountryGuesser from '../app/images/country-guesser.png';
+import CountryGuesser from '../app/images/countryGuesserScreenshot.png';
 import CountyGuesser from '../app/images/CountiesScreenshot.png'
 import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
 import WeatherApp from '../app/images/weather-app.png';
