@@ -70,6 +70,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 
 .hero-link-container {
@@ -431,7 +432,7 @@ li {
         justify-content: start;
     }
 
-    .hero-text {
+    .hero-text{
         gap: 0;
     }
 
@@ -504,6 +505,7 @@ li {
         /* color: var(--socials-color); */
         font-size: 2.5rem;
         margin: 0 0 1rem 0;
+        text-align: center;
     }
 
 
