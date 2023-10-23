@@ -67,7 +67,7 @@ const Hero = () => {
                         <HashLink id='button' to='#about-me'>
                             <Button id='button-text'>About me</Button>
                         </HashLink>
-                        <HashLink id='button' to='/resume' target='_blank'>
+                        <HashLink id='button' to='/resume'>
                             <Button id='button-text'>Resume</Button>
                         </HashLink>
                     </div>
