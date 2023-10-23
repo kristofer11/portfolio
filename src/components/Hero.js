@@ -80,7 +80,7 @@ const Hero = () => {
                     <motion.div
                 initial={{ opacity: 0 }}
                 animate={inView1 ? { opacity: 1 } : {}}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1.5 }}
                 ref={ref1}
             >
                     <h1 className='title'>Kris Hvattum</h1>
@@ -88,7 +88,7 @@ const Hero = () => {
                     <motion.div
                 initial={{ opacity: 0 }}
                 animate={inView1 ? { opacity: 1 } : {}}
-                transition={{ duration: 3.5 }}
+                transition={{ duration: 2.5 }}
                 ref={ref1}
             >
                     <p className='subtitle'>Web Developer</p>
