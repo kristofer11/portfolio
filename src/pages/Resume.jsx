@@ -1,4 +1,4 @@
-import ResumeImg from '../app/images/01KrisHvattumResume.png'
+import ResumeImg from '../app/images/Kris_Hvattum_Resume.png'
 
 const Resume = () => {
   return (
