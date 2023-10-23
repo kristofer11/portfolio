@@ -14,9 +14,19 @@ import {
 import Logo from '../app/images/logo-white-nobg.png';
 import { HashLink } from 'react-router-hash-link';
 import headshot from '../app/images/IMG_5246.jpg';
-// import Header from '../components/Header'
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
+    const [ref1, inView1] = useInView({
+        triggerOnce: true,
+    })
+    const [ref2, inView2] = useInView({
+        triggerOnce: true,
+    })
+    const [ref3, inView3] = useInView({
+        triggerOnce: true,
+    })
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='hero'>
@@ -58,10 +68,31 @@ const Hero = () => {
 
                 <div className='hero-text'>
                     <Col className='headshot-container'>
+                    <motion.div
+                initial={{ opacity: 0 }}
+                animate={inView1 ? { opacity: 1 } : {}}
+                transition={{ duration: 0.5 }}
+                ref={ref3}
+            >
                         <img src={headshot} className='headshot' alt='Kris hvattum Headshot' />
+                        </motion.div>
                     </Col>
+                    <motion.div
+                initial={{ opacity: 0 }}
+                animate={inView1 ? { opacity: 1 } : {}}
+                transition={{ duration: 2 }}
+                ref={ref1}
+            >
                     <h1 className='title'>Kris Hvattum</h1>
+                    </motion.div>
+                    <motion.div
+                initial={{ opacity: 0 }}
+                animate={inView1 ? { opacity: 1 } : {}}
+                transition={{ duration: 3.5 }}
+                ref={ref1}
+            >
                     <p className='subtitle'>Web Developer</p>
+                    </motion.div>
                     <div className='hero-link-container'>
                         <HashLink id='button' to='#about-me'>
                             <Button id='button-text'>About me</Button>
