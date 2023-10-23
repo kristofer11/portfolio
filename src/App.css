@@ -52,7 +52,7 @@ a {
 .hero {
     background-color: var(--main-bg-color);
     /* background: linear-gradient(var(--main-bg-color) 82%, var(--about-bg)); */
-    min-height: 100vh;
+    min-height: 88vh;
     display: flex;
     flex-direction: column;
 }

@@ -1,10 +1,21 @@
 // import { FontAwesomeIcon } from 'font-awesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, } from '@fortawesome/free-solid-svg-icons';
-
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+    const [ref1, inView1] = useInView({
+        triggerOnce: true,
+    })
+
     return (
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={inView1 ? { opacity: 1 } : {}}
+        transition={{ duration: 0.5 }}
+        ref={ref1}
+    >
         <div className='footer' id='contact' >
             <h2>Contact me</h2>
 
@@ -38,6 +49,7 @@ const Footer = () => {
                 </div>
             </a>
         </div>
+        </motion.div>
     )
 };
 
