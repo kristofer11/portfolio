@@ -30,50 +30,10 @@ const Hero = () => {
     const [ref4, inView4] = useInView({
         triggerOnce: true,
     })
-    const [ref5, inView5] = useInView({
-        triggerOnce: true,
-    })
-    const [ref6, inView6] = useInView({
-        triggerOnce: true,
-    })
     
-    const [menuOpen, setMenuOpen] = useState(false);
+    // const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='hero'>
-            {/* <Header /> */}
-            {/* <Navbar dark expand='md' className='d-flex'>
-                <NavbarBrand href='/' className='col-2 ml-0'>
-                    <img className='logo' src={Logo}></img>
-                </NavbarBrand>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-                <Collapse isOpen={menuOpen} navbar>
-                    <Nav className='ms-md-auto' navbar>
-                        <NavItem>
-                            <NavLink className='nav-link' href='#about-me'>
-                                About me
-                            </NavLink>
-                        </NavItem>
-                        <div className='d-none d-md-block nav-divider' style={{ fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem' }}> |</div>
-                        <NavItem>
-                            <NavLink className='nav-link' href='#projects'>
-                                Projects
-                            </NavLink>
-                        </NavItem>
-                        <div className='d-none d-md-block nav-divider' style={{ fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem' }}> |</div>
-                        <NavItem>
-                            <NavLink className='nav-link' href='#contact'>
-                                Contact
-                            </NavLink>
-                        </NavItem>
-                        <div className='d-none d-md-block nav-divider' style={{ fontSize: '40px', marginLeft: '1.5rem', marginRight: '1.5rem' }}> |</div>
-                        <NavItem>
-                            <NavLink className='nav-link' href='#projects'>
-                                Resume
-                            </NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar> */}
             <div className='hero-area'>
 
                 <div className='hero-text'>
@@ -82,7 +42,7 @@ const Hero = () => {
                             initial={{ opacity: 0 }}
                             animate={inView1 ? { opacity: 1 } : {}}
                             transition={{ duration: 0.5 }}
-                            ref={ref3}
+                            ref={ref1}
                         >
                             <img src={headshot} className='headshot' alt='Kris hvattum Headshot' />
                         </motion.div>
@@ -116,9 +76,9 @@ const Hero = () => {
                 <div className='socials'>
                 <motion.div
                             initial={{ opacity: 0 }}
-                            animate={inView1 ? { opacity: 1 } : {}}
+                            animate={inView2 ? { opacity: 1 } : {}}
                             transition={{ duration: 0.5, delay: 0.75 }}
-                            ref={ref4}
+                            ref={ref2}
                         >
                     <div className='social'>
                         <a href='https://github.com/kristofer11' target='_blank'>
@@ -128,9 +88,9 @@ const Hero = () => {
                     </motion.div>
                     <motion.div
                             initial={{ opacity: 0 }}
-                            animate={inView1 ? { opacity: 1 } : {}}
+                            animate={inView3 ? { opacity: 1 } : {}}
                             transition={{ duration: 0.5, delay: 1 }}
-                            ref={ref5}
+                            ref={ref3}
                         >
                     <div className='social'>
                         <a href='https://www.linkedin.com/in/kris-hvattum-bbabb6183/' target='_blank'>
@@ -140,9 +100,9 @@ const Hero = () => {
                     </motion.div>
                     <motion.div
                             initial={{ opacity: 0 }}
-                            animate={inView1 ? { opacity: 1 } : {}}
+                            animate={inView4 ? { opacity: 1 } : {}}
                             transition={{ duration: 0.5, delay: 1.25 }}
-                            ref={ref6}
+                            ref={ref4}
                         >
                     <div className='social' >
                         <a href='https://twitter.com/HvattumKris' target='_blank'>

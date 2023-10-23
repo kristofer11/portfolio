@@ -46,7 +46,7 @@ const Projects = () => {
                 <h2 className='project-title'>Projects</h2>
             </motion.div>            <motion.div
                 initial={{ opacity: 0 }}
-                animate={inView2 ? { opacity: 1 } : {}}
+                animate={inView8 ? { opacity: 1 } : {}}
                 transition={{ duration: 0.5 }}
                 ref={ref8}
             >
