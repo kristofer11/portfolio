@@ -34,6 +34,9 @@ const Projects = () => {
     const [ref8, inView8] = useInView({
         triggerOnce: true,
     })
+    const [ref9, inView9] = useInView({
+        triggerOnce: true,
+    })
 
     return (
         <div className='sub-section-alternative' id='projects' >
@@ -84,6 +87,20 @@ const Projects = () => {
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
+                    animate={inView6 ? { opacity: 1 } : {}}
+                    transition={{ duration: 0.5 }}
+                    ref={ref6}
+                >
+                    <a className='project-link' href='https://library-seven-mu.vercel.app/' target='_blank' >
+                        <div className='project-card'>
+                            <h3 className='project-card-title'>Virtual Bookshelf</h3>
+                            <img className='project-image' src={MyLibrary} alt='Kardia Classical School project screenshot' />
+                            <p className='subtext'>User can log, rate and review what they read - Built with React, SCSS, and Redux</p>
+                        </div>
+                    </a>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0 }}
                     animate={inView4 ? { opacity: 1 } : {}}
                     transition={{ duration: 0.5 }}
                     ref={ref4}
@@ -106,24 +123,17 @@ const Projects = () => {
                         <div className='project-card'>
                             <h3 className='project-card-title'>Photography Website</h3>
                             <img className='project-image' src={BHPhoto} alt='BH Photography project screenshot' />
-                            <p className='subtext'>Photography portfolio website built using ReactJS.</p>
+                            <p className='subtext'>Photography portfolio website built using React</p>
                         </div>
                     </a>
                 </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0 }}
-                    animate={inView6 ? { opacity: 1 } : {}}
+                    animate={inView9 ? { opacity: 1 } : {}}
                     transition={{ duration: 0.5 }}
-                    ref={ref6}
+                    ref={ref9}
                 >
-                    <a className='project-link' href='https://library-seven-mu.vercel.app/my-library/' target='_blank' >
-                        <div className='project-card'>
-                            <h3 className='project-card-title'>Personal Library Manager</h3>
-                            <img className='project-image' src={MyLibrary} alt='Kardia Classical School project screenshot' />
-                            <p className='subtext'>*IN PROGRESS* user can to track, rate and (eventually) share what they are reading</p>
-                        </div>
-                    </a>
-                </motion.div>
                 <a className='project-link' href='https://kristofer11.github.io/country-guesser' target='_blank' >
                     <div className='project-card'>
                         <h3 className='project-card-title'>Country Guessing Game</h3>
@@ -131,7 +141,10 @@ const Projects = () => {
                         <p className='subtext'>Educational game that uses the REST Countries API</p>
                     </div>
                 </a>
-                <motion.div
+                </motion.div>
+
+                {/* REMOVE UNTIL I CAN MAKE A WHOLE GEOGRAPHY TRIVIA SITE */}
+                {/* <motion.div
                     initial={{ opacity: 0 }}
                     animate={inView7 ? { opacity: 1 } : {}}
                     transition={{ duration: 0.5 }}
@@ -144,7 +157,7 @@ const Projects = () => {
                             <p className='subtext'>Geography game built to help my students with counties</p>
                         </div>
                     </a>
-                </motion.div>
+                </motion.div> */}
 
                 {/* REMOVE UNTIL I CAN MAKE MORE PROGRESS */}
                 {/* <a className='project-link' href='https://kristofer11.github.io/weather-app' target='_blank' >
