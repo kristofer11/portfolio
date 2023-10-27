@@ -2,7 +2,7 @@ import BHPhoto from '../app/images/Screenshot 2023-02-28 at 7.10.53 PM.jpeg';
 import KardiaPhoto from '../app/images/kardiaScreenshot9.6.23.png';
 import CountryGuesser from '../app/images/countryGuesserScreenshot.png';
 import CountyGuesser from '../app/images/CountiesScreenshot.png'
-import MyLibrary from '../app/images/Screenshot 2023-07-14 at 2.12.53 PM.png'
+import MyLibrary from '../app/images/BiblioLogScreenshot.png'
 import WeatherApp from '../app/images/weather-app.png';
 import Kelsos from '../app/images/Screenshot 2023-08-18 at 7.56.52 PM.png';
 import Chuck from '../app/images/chuckSiteScreenshot.png'
@@ -116,7 +116,7 @@ const Projects = () => {
                     transition={{ duration: 0.5 }}
                     ref={ref6}
                 >
-                    <a className='project-link' href='https://library-manager-gamma.vercel.app/' target='_blank' >
+                    <a className='project-link' href='https://library-seven-mu.vercel.app/my-library/' target='_blank' >
                         <div className='project-card'>
                             <h3 className='project-card-title'>Personal Library Manager</h3>
                             <img className='project-image' src={MyLibrary} alt='Kardia Classical School project screenshot' />
