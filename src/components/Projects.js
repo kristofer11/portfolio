@@ -53,7 +53,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
                 ref={ref8}
             >
-                <h3><em>Click a project to view it live</em></h3>
+                <h3><em>Click on a project to view it live</em></h3>
             </motion.div>
 
             <div className='project-container'>
